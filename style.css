@@ -13,7 +13,7 @@
 .left_container{
     border: 10px solid red;
     width: 40vw;
-    height: 70vh;
+    /* height: 70vh; */
     margin: 10px;
 }
 
@@ -21,7 +21,7 @@
     border: 10px solid blue;
     position: relative;
     width: 40vw;
-    height: 70vh;
+    /* height: 70vh; */
     margin: 10px;
 }
 
