@@ -1,0 +1,11 @@
+.heading_container{
+    border: 5px solid greenyellow;
+}
+
+.left_container{
+    border: 5px solid red;
+}
+
+.right_container{
+    border: 5px solid purple;
+}
