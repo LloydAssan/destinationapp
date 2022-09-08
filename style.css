@@ -1,52 +1,30 @@
-.heading_container{
-    border: 10px solid greenyellow;
-    width: 100vw;
-    height: 25vh;
-    text-align: center
+.box_container {
+    height: 500px;
+    width: 40%;
 }
 
-.left_right_container{
+.bordered {
+    border-width: 4px;
+    border-style: solid;
+}
+
+#left_box {
+    border: 4px solid red;
+}
+
+#right_box {
+    border: 4px solid blue;
+}
+
+main {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.left_container{
-    border: 10px solid red;
-    width: 40vw;
-    /* height: 70vh; */
-    margin: 10px;
-    position: relative;
+#right_box_heading{
+    border: 4px solid pink;
 }
 
-.right_container{
-    border: 10px solid blue;
-    position: relative;
-    width: 40vw;
-    /* height: 70vh; */
-    margin: 10px;
-}
-
-.right_container_header{
-        border: 5px solid purple;
-}
-
-.right_container_below_header{
-        border: 10px solid yellowgreen;
-        width: 80%;
-        height: 80%;
-        padding-left: 10px;
-}
-
-#form{
-    width: 80%;
-    margin: 20px;
-}
-
-
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
-    .flex-container {
-        flex-direction: column;
-    }
+#cards_container {
+    border-color: yellow;
 }

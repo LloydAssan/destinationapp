@@ -16,79 +16,57 @@
     />
     <!-- Local Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Dream Destination Site</title>
   </head>
   <body>
-    <div class="main_container_body">
-      <div class="heading_container">
-        <h1>Vacation Destinations WishList</h1>
-        <p>
-          Found exciting places to visit on your next vacation? Use the form
-          below to add them to your wishlist.
-        </p>
-      </div>
-      <div class="left_right_container">
-        <div class="left_container">
-          <div id="form">
-            <form>
-              <div class="mb-3">
-                <label class="form-label">Destination name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter the name of the destination"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Location</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Where is it located?"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Photo</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter an image url of the place?"
-                />
-              </div>
+    <header>
+      <h1>Vacation Destinations WishList</h1>
+      <p>
+        Found exciting places to visit on your next vacation? Use the form below
+        to add them to your wishlist.
+      </p>
+    </header>
 
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Description</label
-                >
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                  placeholder="Where is it located?"
-                ></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary">Add to list</button>
-            </form>
-          </div>
-        </div>
-        <div class="right_container">
-          <div class="right_container_header">
-            <div class="right_container_header">
-              <h1>Enter destination details</h1>
-            </div>
-          </div>
-          <div class="right_container_below_header"></div>
-        </div>
-      </div>
-    </div>
+    <main>
+      <section class="box_container" id="left_box">
+        <form id="user_input_form">
+          <input
+            type="text"
+            name=""
+            id="destination"
+            placeholder="Destination"
+            required
+          />
+          <input
+            type="text"
+            name=""
+            id="location"
+            placeholder="Location"
+            required
+          />
+          <input type="url" name="" id="photoUrl" placeholder="Photo URL" />
+          <textarea
+            name=""
+            id="description"
+            cols="30"
+            rows="10"
+            placeholder="Description"
+          ></textarea>
+          <button>Add to list</button>
+        </form>
+      </section>
+      <section class="box_container" id="right_box">
+        <h4 id="right_box_heading">Enter Destination Details</h4>
+        <div class="bordered" id="cards_container">Card container</div>
+      </section>
+    </main>
 
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>
