@@ -1,0 +1,39 @@
+{
+	"folders": [
+		{
+			"name": "SE0822",
+			"path": "../.."
+		},
+		{
+			"name": "js_dom_1",
+			"path": "../../../../Downloads/OneDrive_1_9-6-2022/js_dom_1"
+		},
+		{
+			"name": "js_dom_2",
+			"path": "../../../../Downloads/OneDrive_1_9-6-2022/js_dom_2"
+		},
+		{
+			"name": "js_dom_3",
+			"path": "../../../../Downloads/OneDrive_1_9-6-2022/js_dom_3"
+		},
+		{
+			"name": "js_dom_4",
+			"path": "../../../../Downloads/OneDrive_1_9-6-2022/js_dom_4"
+		},
+		{
+			"name": "js_dom_5",
+			"path": "../../../../Downloads/OneDrive_1_9-6-2022/js_dom_5"
+		},
+		{
+			"name": "js_dom_events_1",
+			"path": "../../../../Downloads/OneDrive_1_9-6-2022 (1)/js_dom_events_1"
+		},
+		{
+			"name": "js_dom_events_2",
+			"path": "../../../../Downloads/OneDrive_1_9-6-2022 (1)/js_dom_events_2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SE0822"
+	}
+}

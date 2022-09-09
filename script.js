@@ -10,7 +10,7 @@ document.getElementById("user_input_form").addEventListener("submit", (evt) => {
   //   Grab user inputs from the form and store them in variables
   const destination = document.getElementById("destination").value;
   const location = document.getElementById("location").value;
-  const photoUrl = document.getElementById("photo_url").value;
+  // const photoUrl = document.getElementById("photo_url").value;
   const description = document.getElementById("description").value;
 
   //   clear user inputs from the form (for UX)
@@ -25,7 +25,7 @@ document.getElementById("user_input_form").addEventListener("submit", (evt) => {
   });
 
   const FALLBACK_PLACEHOLDER_PHOTO =
-    "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1421&q=80";
+    "https://media.istockphoto.com/vectors/loading-icon-vector-illustration-vector-id1335247217?k=20&m=1335247217&s=612x612&w=0&h=CQFY4NO0j2qc6kf4rTc0wTKYWL-9w5ldu-wF8D4oUBk=";
 
   const img = elementFactory({
     eltType: "img",
@@ -35,10 +35,26 @@ document.getElementById("user_input_form").addEventListener("submit", (evt) => {
       { name: "alt", value: `${destination} at ${location}` },
       {
         name: "src",
-        value: photoUrl.length === 0 ? FALLBACK_PLACEHOLDER_PHOTO : photoUrl,
+        value: FALLBACK_PLACEHOLDER_PHOTO,
       },
     ],
   });
+
+  const searchTerm = `${destination} ${location}`;
+
+  const unsplashApiUrl = `https://api.unsplash.com/search/photos?query=${searchTerm}&client_id=7YJ_au6K1r-YrGOowfWlOVcbN7wnyKdxkwk3i_ChBkU`;
+
+  fetch(unsplashApiUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      const photos = data.results;
+
+      const randIdx = Math.floor(Math.random() * photos.length);
+
+      const imgUrl = photos[randIdx].urls.thumb;
+
+      img.setAttribute("src", imgUrl);
+    });
 
   const cardBody = elementFactory({
     parentElt: card,
